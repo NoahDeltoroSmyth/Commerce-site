@@ -16,7 +16,7 @@ export function renderMotorcycle(motorcycle){
     const motorcycleManufacturer = document.createElement('h1');
     motorcycleManufacturer.textContent = motorcycle.manufacturer;
 
-    const motorcycleModel = document.createElement('h2');
+    const motorcycleModel = document.createElement('h3');
     motorcycleModel.textContent = motorcycle.model;
 
     const img = document.createElement('img');

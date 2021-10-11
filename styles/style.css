@@ -1,0 +1,30 @@
+body {
+    background-color: #264653;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#product-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img {
+    width: 400px;
+    border: #E9C46A 4px solid;
+    margin: 25px;
+}
+
+h1, h3, p {
+    display: flex;
+    justify-content: center;
+    color: #F4A261;
+}
+
+#header {
+    margin-bottom: 100px;
+    color: #E76F51;
+}
