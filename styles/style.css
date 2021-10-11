@@ -12,9 +12,16 @@ body {
     align-items: center;
 }
 
+.motorcycle-card {
+    margin: 25px;
+    border: #2A9D8F solid 5px;
+    border-radius: 5px;
+}
+
 img {
     width: 400px;
-    border: #E9C46A 4px solid;
+    border: #E9C46A 3px solid;
+    border-radius: 3px;
     margin: 25px;
 }
 
