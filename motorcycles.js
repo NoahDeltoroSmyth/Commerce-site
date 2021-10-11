@@ -16,7 +16,7 @@ export const motorcycles = [
         model: 'CB360',
         engine: 'Twin, 356cc, air cooled',
         description: 'A 4-stroke, twin cylinder vintage motorcyle',
-        price: 1400
+        price: '$1,400'
     },
     {
         id: '2',
@@ -25,7 +25,7 @@ export const motorcycles = [
         model: 'XS650',
         engine:'Twin, 654cc, air cooled',
         description:'A 4-stroke, twin cylinder vintage motorcycle',
-        price: 1900
+        price: '$1,900'
     },
     {
         id: '3',
@@ -34,6 +34,6 @@ export const motorcycles = [
         model: 'KZ250',
         engine: 'Single, 246cc, air cooled',
         description: 'A 4-stroke, single cylinder vintage motorcycle',
-        price: 950,
+        price: '$900'
     }
 ];

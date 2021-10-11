@@ -13,8 +13,11 @@ export function renderMotorcycle(motorcycle){
     const motorcycleCard = document.createElement('div');
     motorcycleCard.classList.add('motorcycle-card');
 
-    const motorcycleHeader = document.createElement('h2');
-    motorcycleHeader.textContent = motorcycle.manufacturer, motorcycle.model;
+    const motorcycleManufacturer = document.createElement('h1');
+    motorcycleManufacturer.textContent = motorcycle.manufacturer;
+
+    const motorcycleModel = document.createElement('h2');
+    motorcycleModel.textContent = motorcycle.model;
 
     const img = document.createElement('img');
     img.src = motorcycle.img;
@@ -28,6 +31,6 @@ export function renderMotorcycle(motorcycle){
     const price = document.createElement('p');
     price.textContent = motorcycle.price;
 
-    motorcycleCard.append(motorcycleHeader, img, engine, description, price);
+    motorcycleCard.append(motorcycleManufacturer, motorcycleModel, img, engine, description, price);
     return motorcycleCard;
 }
