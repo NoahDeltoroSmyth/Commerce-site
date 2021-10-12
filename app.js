@@ -8,6 +8,6 @@ const productList = document.getElementById('product-list');
   // use user input to update state 
   // update DOM to reflect the new state
 for (let motorcycle of motorcycles){
-  const motorcycleCard = renderMotorcycle(motorcycle);
-  productList.append(motorcycleCard);
+    const motorcycleCard = renderMotorcycle(motorcycle);
+    productList.append(motorcycleCard);
 }
