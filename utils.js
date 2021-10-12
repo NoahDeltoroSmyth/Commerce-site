@@ -5,3 +5,12 @@ export function findById(id, items){
         }
     }
 }
+
+export function calcOrderTotal(cart, motorcycles) {
+    let orderTotal = 0;
+    for (let item of cart){
+        const moto = findById(item.id, motorcycles);
+        orderTotal = orderTotal + moto.price * item.qty;
+    }
+    return orderTotal;
+}
