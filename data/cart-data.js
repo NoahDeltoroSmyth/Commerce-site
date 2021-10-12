@@ -1,4 +1,4 @@
-export const cart = [
+export const cartContent = [
     { id: '1', qty: 1 },
     { id:'2', qty: 1 },
     { id:'3', qty: 1 },
