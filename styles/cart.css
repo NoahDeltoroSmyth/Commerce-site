@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    justify-content: center;
+
+}
+
+table {
+    border: forestgreen 2px solid;
+    margin: 20px;
+    padding: 15px;
+
+}
