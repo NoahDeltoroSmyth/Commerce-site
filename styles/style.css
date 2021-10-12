@@ -1,4 +1,4 @@
-body {
+div {
     background-color: #264653;
     display: flex;
     justify-content: center;
@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .motorcycle-card {
@@ -18,8 +19,13 @@ body {
     border-radius: 5px;
 }
 
+.motorcycle-card:hover {
+    border: #F4A261 solid 5px;
+}
+
 img {
-    width: 400px;
+    max-width: 100%;
+    height: 300px;
     border: #E9C46A 3px solid;
     border-radius: 3px;
     margin: 25px;
@@ -29,9 +35,12 @@ h1, h3, p {
     display: flex;
     justify-content: center;
     color: #F4A261;
+    font-family: Inconsolata;
 }
 
 #header {
     margin-bottom: 100px;
     color: #E76F51;
+    font-family: Big Shoulders Stencil Display;
+    font-size: 4em;
 }

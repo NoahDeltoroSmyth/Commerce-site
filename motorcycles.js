@@ -15,7 +15,7 @@ export const motorcycles = [
         model: 'CB360',
         img: './assets/cb360.jpeg',
         engine: 'Twin, 356cc, air cooled',
-        description: 'A 4-stroke, twin cylinder vintage motorcyle',
+        description: 'A custom 4-stroke, twin cylinder vintage motorcyle',
         price: '$1,400'
     },
     {
@@ -23,8 +23,8 @@ export const motorcycles = [
         manufacturer: 'Yamaha',
         model: 'XS650',
         img:'./assets/xs650.jpeg',
-        engine:'Twin, 654cc, air cooled',
-        description:'A 4-stroke, twin cylinder vintage motorcycle',
+        engine:'Twin cylinder, 654cc, air cooled',
+        description:'A custom 4-stroke, twin cylinder vintage motorcycle',
         price: '$1,900'
     },
     {
@@ -32,8 +32,26 @@ export const motorcycles = [
         manufacturer: 'Kawasaki',
         model: 'KZ250',
         img:'./assets/kz250.jpeg',
-        engine: 'Single, 246cc, air cooled',
-        description: 'A 4-stroke, single cylinder vintage motorcycle',
+        engine: 'Single cylinder, 246cc, air cooled',
+        description: 'A custom 4-stroke, single cylinder vintage motorcycle',
         price: '$900'
+    },
+    {
+        id: '4',
+        manufacturer: 'Harley-Davidson',
+        model: 'WLA',
+        img:'./assets/harley.jpeg',
+        engine: 'V Twin cylinder, 739.4cc, air cooled',
+        description: 'A custom 4-stroke, V twin cylinder military motorcycle',
+        price: '$2,000'
+    },
+    {
+        id: '5',
+        manufacturer: 'Suzuki',
+        model: 'GS750',
+        img:'./assets/suzuki.jpeg',
+        engine: 'Inline four cylinder, 748cc, air cooled',
+        description: 'A custom 4-stroke, single cylinder vintage motorcycle',
+        price: '$2,100'
     }
 ];
