@@ -27,7 +27,9 @@ test('findById returns item matching ID', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-test('making sure adding item into cart is working', (expect) => {
+
+
+test('addItem() function', (expect) => {
     const expected = [
         { id: '1', qty: 2 },
         { id:'2', qty: 1 },
@@ -44,9 +46,9 @@ test('making sure adding item into cart is working', (expect) => {
         { id:'5', qty: 1 },
     ];
 
-    localStorage.setItem('CART', JSON.stringify(mockCartData));
+    localStorage.setItem('shoppingcart', JSON.stringify(mockCartData));
 
-    const actual = addItem(1);
+    const actual = addItem('1');
 
     expect.deepEqual(actual, expected);
 
