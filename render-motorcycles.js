@@ -31,6 +31,11 @@ export function renderMotorcycle(motorcycle){
     const price = document.createElement('p');
     price.textContent = motorcycle.price;
 
-    motorcycleCard.append(motorcycleManufacturer, motorcycleModel, img, engine, description, price);
+    const button = document.createElement('button');
+    button.textContent = 'Add to cart';
+    button.id = motorcycle.id;
+    button.classList.add = ('add-button');
+
+    motorcycleCard.append(motorcycleManufacturer, motorcycleModel, img, engine, description, price, button);
     return motorcycleCard;
 }

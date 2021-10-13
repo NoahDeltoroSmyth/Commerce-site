@@ -14,3 +14,4 @@ export function calcOrderTotal(cart, product) {
     }
     return orderTotal;
 }
+
