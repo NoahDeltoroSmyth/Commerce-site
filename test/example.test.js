@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 import { motorcycles } from '../motorcycles.js';
-import { findById } from '../utils.js';
+import { addItem, findById } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -27,3 +27,27 @@ test('findById returns item matching ID', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
+test('making sure adding item into cart is working', (expect) => {
+    const expected = [
+        { id: '1', qty: 2 },
+        { id:'2', qty: 1 },
+        { id:'3', qty: 1 },
+        { id:'4', qty: 1 },
+        { id:'5', qty: 1 },
+    ];
+
+    const mockCartData = [
+        { id: '1', qty: 1 },
+        { id:'2', qty: 1 },
+        { id:'3', qty: 1 },
+        { id:'4', qty: 1 },
+        { id:'5', qty: 1 },
+    ];
+
+    localStorage.setItem('CART', JSON.stringify(mockCartData));
+
+    const actual = addItem(1);
+
+    expect.deepEqual(actual, expected);
+
+});

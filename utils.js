@@ -15,3 +15,11 @@ export function calcOrderTotal(cart, product) {
     return orderTotal;
 }
 
+export function getCart(){
+    const cartString = localStorage.getItem('shoppingcart') || '[]';
+    const cart = JSON.parse(cartString);
+    return cart;
+}
+
+export function addItem(id){
+}
