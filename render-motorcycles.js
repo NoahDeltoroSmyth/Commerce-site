@@ -8,6 +8,8 @@
 //     description: 'A 4-stroke, twin cylinder vintage motorcyle',
 //     price: 1400
 // },
+import { addItem } from './utils.js';
+
 
 export function renderMotorcycle(motorcycle){
     const motorcycleCard = document.createElement('div');
@@ -37,5 +39,10 @@ export function renderMotorcycle(motorcycle){
     button.classList.add = ('add-button');
 
     motorcycleCard.append(motorcycleManufacturer, motorcycleModel, img, engine, description, price, button);
-    return motorcycleCard;
+
+    button.addEventListener('click', () => {
+        addItem(button.id);
+    });
+
+    return motorcycleCard;   
 }
