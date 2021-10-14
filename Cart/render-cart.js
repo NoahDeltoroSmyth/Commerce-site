@@ -16,3 +16,9 @@ for (let cartItem of cart){
 const orderTotal = calcOrderTotal(cart, motorcycles);
 const tdOrderTotal = document.getElementById('total');
 tdOrderTotal.textContent = orderTotal;
+
+const orderButton = document.getElementById('order-button');
+orderButton.addEventListener('click', () => {
+    localStorage.removeItem('shoppingcart');
+    window.location.replace('..');
+});

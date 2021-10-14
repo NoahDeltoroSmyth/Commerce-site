@@ -34,3 +34,7 @@ export function addItem(id){
     localStorage.setItem('shoppingcart', stringCart);
     return cart;
 }
+
+// export function clearCart(){
+
+// }
