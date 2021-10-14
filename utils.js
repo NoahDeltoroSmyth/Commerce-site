@@ -35,6 +35,7 @@ export function addItem(id){
     return cart;
 }
 
-// export function clearCart(){
-
-// }
+export function clearCart(){
+    localStorage.removeItem('shoppingcart');
+    window.location.replace('..');
+}

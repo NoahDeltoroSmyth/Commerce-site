@@ -27,16 +27,6 @@ test('findById returns item matching ID', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-// test('clearCart() fucntion', (expect) => {
-//     const expected = [
-//         { id: '1', qty: 1 },
-//         { id:'2', qty: 1 },
-//         { id:'3', qty: 1 },
-//         { id:'4', qty: 1 },
-//         { id:'5', qty: 1 },
-//     ];
-// });
-
 test('addItem() function', (expect) => {
     const expected = [
         { id: '1', qty: 2 },

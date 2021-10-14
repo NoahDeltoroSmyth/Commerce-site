@@ -1,6 +1,6 @@
 import { motorcycles } from '../motorcycles.js';
 //import { cartContent } from '../data/cart-data.js';
-import { calcOrderTotal, findById, getCart } from '../utils.js';
+import { calcOrderTotal, findById, getCart, clearCart } from '../utils.js';
 import { renderLineItem } from './render-line-items.js';
 
 const cart = getCart('shoppingcart');
@@ -19,6 +19,5 @@ tdOrderTotal.textContent = orderTotal;
 
 const orderButton = document.getElementById('order-button');
 orderButton.addEventListener('click', () => {
-    localStorage.removeItem('shoppingcart');
-    window.location.replace('..');
+    clearCart();
 });
