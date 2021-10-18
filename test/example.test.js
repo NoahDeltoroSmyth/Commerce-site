@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 import { motorcycles } from '../motorcycles.js';
-import { addItem, findById } from '../utils.js';
+import { addItem, findById, addProduct, getProducts } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -50,4 +50,22 @@ test('addItem() function', (expect) => {
 
     expect.deepEqual(actual, expected);
 
+});
+
+test('addProduct() function', (expect)=> {
+    let products = getProducts();
+    const newProduct = {
+        id: '6',
+        manufacturer: 'Triumph',
+        model: 'CB360',
+        img: './assets/triumph.jpeg',
+        engine: 'Twin, 356cc, air cooled',
+        description: 'A custom 4-stroke, twin cylinder vintage motorcyle',
+        price: 30
+    };
+
+    addProduct(newProduct);
+
+    products = getProducts();
+    expect.equal(products.length, 6);
 });
