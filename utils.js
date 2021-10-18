@@ -22,14 +22,17 @@ export function getCart(){
 }
 
 export function addItem(id){
+    //GET
     const cart = getCart();
     const cartItem = findById(id, cart);
+    //MODIFY
     if (cartItem){
         cartItem.qty++;
     } else {
         const newItem = { id: id, qty: 1 };
         cart.push(newItem);
     }
+    //SET
     const stringCart = JSON.stringify(cart);
     localStorage.setItem('shoppingcart', stringCart);
     return cart;
@@ -39,3 +42,4 @@ export function clearCart(){
     localStorage.removeItem('shoppingcart');
     window.location.replace('..');
 }
+
