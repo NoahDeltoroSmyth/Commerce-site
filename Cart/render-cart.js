@@ -1,9 +1,10 @@
-import { motorcycles } from '../motorcycles.js';
+// import { motorcycles } from '../motorcycles.js';
 //import { cartContent } from '../data/cart-data.js';
-import { calcOrderTotal, findById, getCart, clearCart } from '../utils.js';
+import { calcOrderTotal, findById, getCart, clearCart, getProducts } from '../utils.js';
 import { renderLineItem } from './render-line-items.js';
 
 const cart = getCart('shoppingcart');
+const motorcycles = getProducts();
 
 const tbody = document.getElementById('table-body');
 for (let cartItem of cart){

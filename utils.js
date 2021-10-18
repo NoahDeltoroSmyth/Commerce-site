@@ -43,3 +43,15 @@ export function clearCart(){
     window.location.replace('..');
 }
 
+import { motorcycles } from './motorcycles.js';
+
+export function getProducts(){
+    let lsProducts = localStorage.getItem('products');
+    const products = JSON.parse(lsProducts);
+
+    if (!products){
+        const motorcyclesString = JSON.stringify(motorcycles);
+        localStorage.setItem('products', motorcyclesString);
+    }
+    return products || motorcycles;
+}
