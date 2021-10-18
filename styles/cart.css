@@ -1,12 +1,19 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    background-color: #264653;
 
 }
 
-table {
-    border: forestgreen 2px solid;
+table, button{
+    border: #E76F51 solid 3px;
     margin: 20px;
     padding: 15px;
+    color: #F4A261;
+    box-sizing: 100%;
+}
 
+a {
+    color: #E76F51;
 }
