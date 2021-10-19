@@ -10,7 +10,7 @@ form.addEventListener('submit', (expect)=> {
         manufacturer: data.get('manufacturer'),
         model: data.get('model'),
         img: data.get('img'),
-        engine: data.get('img'),
+        engine: data.get('engine'),
         description: data.get('description'),
         price: Number(data.get('price'))
 
