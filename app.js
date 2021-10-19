@@ -1,12 +1,11 @@
-// import functions and grab DOM elements
 import { renderMotorcycle } from './render-motorcycles.js';
-import { motorcycles } from './motorcycles.js';
-// initialize global state
+// import { motorcycles } from './motorcycles.js';
+import { getProducts } from './utils.js';
+
+
 const productList = document.getElementById('product-list');
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+
+const motorcycles = getProducts();
 for (let motorcycle of motorcycles){
     const motorcycleCard = renderMotorcycle(motorcycle);
     productList.append(motorcycleCard);

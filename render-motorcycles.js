@@ -44,5 +44,5 @@ export function renderMotorcycle(motorcycle){
         addItem(button.id);
     });
 
-    return motorcycleCard;   
+    return motorcycleCard;
 }
