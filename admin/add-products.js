@@ -16,7 +16,7 @@ form.addEventListener('submit', (expect)=> {
 
     };
     addProduct(newMoto);
-    window.location.replace('..');
+    // window.location.replace('..');
     alert('New Motorcycle has been added');
-    
+    form.reset();
 });
